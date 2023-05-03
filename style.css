@@ -1,0 +1,244 @@
+body , html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    background: #071d27;
+    font-size: 2em;
+}
+
+.li-B {  
+    font-size: 2em;
+}
+
+.nav {
+    width: 100%;
+    max-width: 93%;
+    margin: 25px auto;
+}
+
+.li {
+    line-height: 20px;
+    list-style: none;
+    color: rgb(240, 240, 240);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.ul a {
+    text-decoration: none;
+    
+
+}
+
+.li-A, .li-C {
+    font-style: italic;
+    font-family: monospace;
+}
+
+.li-A:hover, .li-C:hover {
+    background: #b7d6e4;
+    color: rgb(27, 27, 27);
+}
+
+/* Cartas */
+
+.cards {
+    display: grid ;
+    gap: 40px;
+    grid-template-columns: repeat(1, auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 450px 450px;
+}
+
+.card {
+    border-radius: 20px;
+    background: rgb(39, 39, 39);  
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.card1 {
+    grid-column: 1/2;
+    background-image: url(https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw89df51a5/products/AD_H20465/AD_H20465-1.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}   
+
+.card2 {
+    grid-column: 2/3;
+    background-image: url(https://cardon.com.ar/wp-content/uploads/2020/04/LA-160317004-99-2794.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}   
+
+.card3 {
+
+    background-image: url(https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6da5744b/products/PU_671173-50/PU_671173-50-1.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card4 {
+    background-image: url(https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwec469ddd/products/NI_DM6181-010/NI_DM6181-010-1.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.main {
+    background: #113b4e;
+    padding: 20px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(24, 24, 24);
+    font-family: monospace;
+    font-size: 1em;
+    line-height: 20px;
+    
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer li {
+    padding: 5px;
+}
+
+.footer-cont {
+
+    color: rgb(240, 240, 240);
+    list-style: none;
+}
+
+.footer a {
+    padding: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    justify-content: center;
+}
+
+.footer a:hover {
+    background: rgb(54, 54, 54);
+}
+
+/* MediaQ */
+
+@media (max-width: 970px) {
+
+    .header {
+        font-size: 1.4em;
+    }
+
+
+    .cards { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px;
+        gap: 12px;
+    }
+    
+    .card {  
+        max-width: 100%;
+        max-height: 50vh;
+    }
+    
+    .card1 {
+        grid-row: 1/2;
+        grid-column: 1;
+    }   
+    
+    .card2 {
+        grid-row: 2/3;
+        grid-column: 1;
+    }   
+    
+    .card3 {
+        grid-row: 3/4;
+        grid-column: 1;
+    }
+    
+    .card4 {
+        grid-row: 4/5;
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        font-size: 1.4em;
+    }
+
+
+    .cards { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px 250px;
+        gap: 5px;
+    }
+    
+    .card {  
+        max-width: 100%;
+        height: 30vh;
+    }
+    
+    .card1 {
+        grid-row: 1/2;
+        grid-column: 1;
+    }   
+    
+    .card2 {
+        grid-row: 2/3;
+        grid-column: 1;
+    }   
+    
+    .card3 {
+        grid-row: 3/4;
+        grid-column: 1;
+    }
+    
+    .card4 {
+        grid-row: 4/5;
+        grid-column: 1;
+    }
+
+    .c {
+        width: 68%;
+        text-align: center;
+    }
+
+    .footer li {
+        font-size: 0.8m;
+    }
+
+    .footer ul {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
